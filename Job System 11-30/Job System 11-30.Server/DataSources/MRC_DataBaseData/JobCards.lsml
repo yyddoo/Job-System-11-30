@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="JobCard">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="JID"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="JName"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <NotSortable />
+          <MaxLength />
+          <AnsiConstraint />
+          <DisplayName
+            Value="Name" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="JDescription"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <NotSortable />
+          <MaxLength />
+          <AnsiConstraint />
+          <DisplayName
+            Value="Description" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="JWarrenty"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <NotSortable />
+          <MaxLength />
+          <AnsiConstraint />
+          <DisplayName
+            Value="Warrenty" />
+          <SupportedValue
+            DisplayName="No Warranty"
+            Value="NoWarr" />
+          <SupportedValue
+            DisplayName="Firestone 10 Year"
+            Value="Firestone10" />
+          <SupportedValue
+            DisplayName="Firestone 15 Year"
+            Value="Firestone15" />
+          <SupportedValue
+            DisplayName="Firestone 20 Year"
+            Value="Firestone20" />
+          <SupportedValue
+            DisplayName="Carlisle 10 Year"
+            Value="Carlisle10" />
+          <SupportedValue
+            DisplayName="Carlisle 15 Year"
+            Value="Carlisle15" />
+          <SupportedValue
+            DisplayName="Carlisle 20 Year"
+            Value="Carlisle20" />
+          <SupportedValue
+            DisplayName="MRC 2 Year"
+            Value="MRC2yr" />
+          <SupportedValue
+            DisplayName="Berridge Kynar Finish"
+            Value="Berridge" />
+          <SupportedValue
+            DisplayName="JM 10 Year"
+            Value="Jm10" />
+          <SupportedValue
+            DisplayName="JM 15 Year"
+            Value="jm15" />
+          <SupportedValue
+            DisplayName="JM 20 Year"
+            Value="jm20" />
+          <SupportedValue
+            DisplayName="Tremco"
+            Value="tremco" />
+          <SupportedValue
+            DisplayName="Garland"
+            Value="Garland" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="JHoursEstmated"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <DecimalConstraint
+            Precision="18"
+            Scale="0" />
+          <NotSearchable />
+          <DisplayName
+            Value="Hours Estmated" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="JHoursTook"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <DecimalConstraint
+            Precision="18"
+            Scale="0" />
+          <NotSearchable />
+          <DisplayName
+            Value="Hours Took" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="JPrice"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money?">
+        <EntityProperty.Attributes>
+          <DecimalConstraint
+            Precision="19"
+            Scale="4" />
+          <NotSearchable />
+          <DisplayName
+            Value="Price" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="JSquares"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <DecimalConstraint
+            Precision="18"
+            Scale="0" />
+          <NotSearchable />
+          <DisplayName
+            Value="Squares" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="JDate"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="0"
+            PreserveSeconds="True" />
+          <NotSearchable />
+          <DisplayName
+            Value="Date" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="JobNumber"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            IsFixedLength="True"
+            Value="10" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="WarrantyNumber"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            IsFixedLength="True"
+            Value="10" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="WarrantyStart"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="0"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="WarrantyEnd"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="0"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address1"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+          <NotSortable />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Address2"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+          <NotSortable />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="City"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+          <NotSortable />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="State"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            IsFixedLength="True"
+            Value="10" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Zip"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            IsFixedLength="True"
+            Value="10" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GeneralContractor"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <NotSortable />
+          <MaxLength />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="BuildingOwner"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <NotSortable />
+          <MaxLength />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityContainer
+    Name="MRC_DataBaseData">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="JobCards"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="JobCard" />
+    <QueryOperation
+      Name="JobCards_Single"
+      ReturnType="JobCard">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="JID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="JID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="JobCards" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="JID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'JID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="JobCards_SingleOrDefault"
+      ReturnType="JobCard">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="JID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="JID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="JobCards" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="JID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'JID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="MRC_DataBaseDataDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="JobCards">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="JobCard" />
+        <SsdlProperty
+          Name="JID"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="JobCard/Properties[JID]" />
+        <SsdlProperty
+          Name="JName"
+          Nullable="True"
+          Type="text"
+          Property="JobCard/Properties[JName]" />
+        <SsdlProperty
+          Name="JDescription"
+          Nullable="True"
+          Type="text"
+          Property="JobCard/Properties[JDescription]" />
+        <SsdlProperty
+          Name="JWarrenty"
+          Nullable="True"
+          Type="text"
+          Property="JobCard/Properties[JWarrenty]" />
+        <SsdlProperty
+          Name="JHoursEstmated"
+          Nullable="True"
+          Type="numeric"
+          Property="JobCard/Properties[JHoursEstmated]" />
+        <SsdlProperty
+          Name="JHoursTook"
+          Nullable="True"
+          Type="numeric"
+          Property="JobCard/Properties[JHoursTook]" />
+        <SsdlProperty
+          Name="JPrice"
+          Nullable="True"
+          Type="money"
+          Property="JobCard/Properties[JPrice]" />
+        <SsdlProperty
+          Name="JSquares"
+          Nullable="True"
+          Type="numeric"
+          Property="JobCard/Properties[JSquares]" />
+        <SsdlProperty
+          Name="JDate"
+          Nullable="True"
+          Type="date"
+          Property="JobCard/Properties[JDate]" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="JobNumber"
+          Nullable="True"
+          Type="nchar"
+          Property="JobCard/Properties[JobNumber]" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="WarrantyNumber"
+          Nullable="True"
+          Type="nchar"
+          Property="JobCard/Properties[WarrantyNumber]" />
+        <SsdlProperty
+          Name="WarrantyStart"
+          Nullable="True"
+          Type="date"
+          Property="JobCard/Properties[WarrantyStart]" />
+        <SsdlProperty
+          Name="WarrantyEnd"
+          Nullable="True"
+          Type="date"
+          Property="JobCard/Properties[WarrantyEnd]" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="State"
+          Nullable="True"
+          Type="nchar"
+          Property="JobCard/Properties[State]" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="Zip"
+          Nullable="True"
+          Type="nchar"
+          Property="JobCard/Properties[Zip]" />
+        <SsdlProperty
+          Name="Address1"
+          Nullable="True"
+          Type="text"
+          Property="JobCard/Properties[Address1]" />
+        <SsdlProperty
+          Name="Address2"
+          Nullable="True"
+          Type="text"
+          Property="JobCard/Properties[Address2]" />
+        <SsdlProperty
+          Name="City"
+          Nullable="True"
+          Type="text"
+          Property="JobCard/Properties[City]" />
+        <SsdlProperty
+          Name="GeneralContractor"
+          Nullable="True"
+          Type="text"
+          Property="JobCard/Properties[GeneralContractor]" />
+        <SsdlProperty
+          Name="BuildingOwner"
+          Nullable="True"
+          Type="text"
+          Property="JobCard/Properties[BuildingOwner]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+  </DataService>
+</ServiceApplication>

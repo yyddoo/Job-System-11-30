@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="MRC_DataBaseData" StorageEntityContainer="MRC_DataBaseDataStore">
+    <EntitySetMapping Name="JobCards">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.JobCard)">
+        <MappingFragment StoreEntitySet="JobCards">
+          <ScalarProperty Name="JID" ColumnName="JID" />
+          <ScalarProperty Name="JName" ColumnName="JName" />
+          <ScalarProperty Name="JDescription" ColumnName="JDescription" />
+          <ScalarProperty Name="JWarrenty" ColumnName="JWarrenty" />
+          <ScalarProperty Name="JHoursEstmated" ColumnName="JHoursEstmated" />
+          <ScalarProperty Name="JHoursTook" ColumnName="JHoursTook" />
+          <ScalarProperty Name="JPrice" ColumnName="JPrice" />
+          <ScalarProperty Name="JSquares" ColumnName="JSquares" />
+          <ScalarProperty Name="JDate" ColumnName="JDate" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="WarrantyNumber" ColumnName="WarrantyNumber" />
+          <ScalarProperty Name="WarrantyStart" ColumnName="WarrantyStart" />
+          <ScalarProperty Name="WarrantyEnd" ColumnName="WarrantyEnd" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="GeneralContractor" ColumnName="GeneralContractor" />
+          <ScalarProperty Name="BuildingOwner" ColumnName="BuildingOwner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

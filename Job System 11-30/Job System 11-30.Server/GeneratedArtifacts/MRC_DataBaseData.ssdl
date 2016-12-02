@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MRC_DataBaseDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MRC_DataBaseDataStore">
+    <EntitySet Name="JobCards" EntityType="MRC_DataBaseDataStore.JobCard" store:Type="Tables" Schema="dbo" Table="JobCard" />
+  </EntityContainer>
+  <EntityType Name="JobCard">
+    <Key>
+      <PropertyRef Name="JID" />
+    </Key>
+    <Property Name="JID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JName" Type="text" />
+    <Property Name="JDescription" Type="text" />
+    <Property Name="JWarrenty" Type="text" />
+    <Property Name="JHoursEstmated" Type="numeric" />
+    <Property Name="JHoursTook" Type="numeric" />
+    <Property Name="JPrice" Type="money" />
+    <Property Name="JSquares" Type="numeric" />
+    <Property Name="JDate" Type="date" />
+    <Property Name="JobNumber" Type="nchar" MaxLength="10" />
+    <Property Name="WarrantyNumber" Type="nchar" MaxLength="10" />
+    <Property Name="WarrantyStart" Type="date" />
+    <Property Name="WarrantyEnd" Type="date" />
+    <Property Name="Address1" Type="text" />
+    <Property Name="Address2" Type="text" />
+    <Property Name="City" Type="text" />
+    <Property Name="State" Type="nchar" MaxLength="10" />
+    <Property Name="Zip" Type="nchar" MaxLength="10" />
+    <Property Name="GeneralContractor" Type="text" />
+    <Property Name="BuildingOwner" Type="text" />
+  </EntityType>
+</Schema>
