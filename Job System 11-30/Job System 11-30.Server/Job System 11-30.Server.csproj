@@ -205,6 +205,9 @@
     <Content Include="Web.config" />
     <LightSwitchModel Include="DataSources\MRC_DataBaseData\JobCards.lsml" />
     <LightSwitchModel Include="Properties\DataSources\MRC_DataBaseData.lsml" />
+    <LightSwitchModel Include="DataSources\MRC_DataBaseData\Query1.lsml">
+      <DependentUpon>JobCards.lsml</DependentUpon>
+    </LightSwitchModel>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -181,6 +181,14 @@ namespace LightSwitchApplication
             return this.Details.Methods.JobCards_SingleOrDefault.CreateInvocation(JID).Execute();
         }
         
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.JobCard> Query1()
+        {
+            return this.Details.Methods.Query1.CreateInvocation().Execute();
+        }
+        
         #endregion
     
         #region Details Class
@@ -245,6 +253,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.MRC_DataBaseData, global::LightSwitchApplication.MRC_DataBaseData.DetailsClass, global::LightSwitchApplication.JobCard> Query1
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.MRC_DataBaseData.DetailsClass.MethodSetProperties.Query1) as global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.MRC_DataBaseData, global::LightSwitchApplication.MRC_DataBaseData.DetailsClass, global::LightSwitchApplication.JobCard>;
+                    }
+                }
+                
             }
     
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -294,6 +310,16 @@ namespace LightSwitchApplication
                     c(d, ref d._JobCards_SingleOrDefault, sf);
                 }
     
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.MRC_DataBaseData, global::LightSwitchApplication.MRC_DataBaseData.DetailsClass, global::LightSwitchApplication.JobCard>.Entry
+                    Query1 = new global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.MRC_DataBaseData, global::LightSwitchApplication.MRC_DataBaseData.DetailsClass, global::LightSwitchApplication.JobCard>.Entry(
+                        "Query1",
+                        global::LightSwitchApplication.MRC_DataBaseData.DetailsClass.MethodSetProperties._Query1_Stub);
+                private static void _Query1_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MRC_DataBaseData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.MRC_DataBaseData, global::LightSwitchApplication.MRC_DataBaseData.DetailsClass, global::LightSwitchApplication.JobCard>.Data> c, global::LightSwitchApplication.MRC_DataBaseData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Query1, sf);
+                }
+    
             }
     
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -322,6 +348,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.MRC_DataBaseData, global::LightSwitchApplication.MRC_DataBaseData.DetailsClass, global::LightSwitchApplication.JobCard>.Data _JobCards_SingleOrDefault;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.MRC_DataBaseData, global::LightSwitchApplication.MRC_DataBaseData.DetailsClass, global::LightSwitchApplication.JobCard>.Data _Query1;
             
         }
     

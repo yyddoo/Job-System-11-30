@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 12/2/2016 7:12:29 PM
+// Generation date: 12/2/2016 7:55:54 PM
 namespace LightSwitchApplication.Implementation
 {
     
@@ -121,10 +121,12 @@ namespace LightSwitchApplication.Implementation
                 "String\" MaxLength=\"Max\" Unicode=\"false\" /><Property Name=\"BuildingOwner\" Type=\"E" +
                 "dm.String\" MaxLength=\"Max\" Unicode=\"false\" /></EntityType><EntityContainer Name=" +
                 "\"MRC_DataBaseData\" m:IsDefaultEntityContainer=\"true\"><EntitySet Name=\"JobCards\" " +
-                "EntityType=\"LightSwitchApplication.JobCard\" /><FunctionImport Name=\"Microsoft_Li" +
-                "ghtSwitch_GetCanInformation\" ReturnType=\"Edm.String\" m:HttpMethod=\"GET\"><Paramet" +
-                "er Name=\"dataServiceMembers\" Type=\"Edm.String\" Mode=\"In\" /></FunctionImport></En" +
-                "tityContainer></Schema></edmx:DataServices></edmx:Edmx>";
+                "EntityType=\"LightSwitchApplication.JobCard\" /><FunctionImport Name=\"Query1\" Retu" +
+                "rnType=\"Collection(LightSwitchApplication.JobCard)\" EntitySet=\"JobCards\" m:HttpM" +
+                "ethod=\"GET\" /><FunctionImport Name=\"Microsoft_LightSwitch_GetCanInformation\" Ret" +
+                "urnType=\"Edm.String\" m:HttpMethod=\"GET\"><Parameter Name=\"dataServiceMembers\" Typ" +
+                "e=\"Edm.String\" Mode=\"In\" /></FunctionImport></EntityContainer></Schema></edmx:Da" +
+                "taServices></edmx:Edmx>";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             private static string GetConcatenatedEdmxString()
             {

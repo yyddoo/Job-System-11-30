@@ -37,6 +37,13 @@ namespace LightSwitchApplication.Implementation
         }
     
     #region Queries
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.JobCard> Query1()
+        {
+            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.JobCard> query;
+            query = this.GetQuery<global::LightSwitchApplication.Implementation.JobCard>("JobCards");
+            return query;
+        }
+    
     #endregion
 
     #region Protected Methods

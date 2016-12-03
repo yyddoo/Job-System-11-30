@@ -108,6 +108,21 @@ namespace LightSwitchApplication
         partial void SaveChanges_ExecuteFailed(global::System.Exception exception);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Query1_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void Query1_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Query1_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.JobCard> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void Query1_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.JobCard> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void Query1_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void Query_Executing(global::Microsoft.LightSwitch.QueryExecutingDescriptor queryDescriptor);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -229,6 +244,39 @@ namespace LightSwitchApplication
             private static void __SaveChanges_Failed(global::LightSwitchApplication.MRC_DataBaseDataService d, object[] args, global::System.Exception ex)
             {
                 d.SaveChanges_ExecuteFailed(ex);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.MRC_DataBaseDataService, global::LightSwitchApplication.JobCard>
+                __Query1Entry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.MRC_DataBaseDataService, global::LightSwitchApplication.JobCard>(
+                    "Query1",
+                    global::LightSwitchApplication.MRC_DataBaseDataService.DetailsClass.__Query1_CanExecute,
+                    global::LightSwitchApplication.MRC_DataBaseDataService.DetailsClass.__Query1_Executing,
+                    global::LightSwitchApplication.MRC_DataBaseDataService.DetailsClass.__Query1_Executed,
+                    global::LightSwitchApplication.MRC_DataBaseDataService.DetailsClass.__Query1_Failed,
+                    global::LightSwitchApplication.MRC_DataBaseDataService.DetailsClass.__Query1_PreprocessQuery);
+            private static bool __Query1_CanExecute(global::LightSwitchApplication.MRC_DataBaseDataService d, bool r)
+            {
+                d.Query1_CanExecute(ref r);
+                return r;
+            }
+            private static void __Query1_Executing(global::LightSwitchApplication.MRC_DataBaseDataService d, object[] args)
+            {
+                d.Query1_Executing();
+            }
+            private static void __Query1_Executed(global::LightSwitchApplication.MRC_DataBaseDataService d, object[] args)
+            {
+                d.Query1_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.JobCard>)args[0]);
+            }
+            private static void __Query1_Failed(global::LightSwitchApplication.MRC_DataBaseDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Query1_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Query1_PreprocessQuery(global::LightSwitchApplication.MRC_DataBaseDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.JobCard> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.JobCard>)args[0];
+                d.Query1_PreprocessQuery(ref query);
+                return query;
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]

@@ -343,6 +343,18 @@ namespace LightSwitchApplication
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void JobCards_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
  
+        /// <summary>
+        /// Calls the MyOwnMethod screen method.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void MyOwnMethod()
+        {
+            this.Details.Methods.MyOwnMethod.CreateInvocation().Execute();
+        }
+        partial void MyOwnMethod_CanExecute(ref bool result);
+        partial void MyOwnMethod_Execute();
+
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -353,6 +365,8 @@ namespace LightSwitchApplication
             static DetailsClass()
             {
                 var initializePropertyEntry = global::LightSwitchApplication.SearchJobCards.DetailsClass.PropertySetProperties.JobCards;
+                var initializeCommandEntry = global::LightSwitchApplication.SearchJobCards.DetailsClass.CommandSetProperties.MyOwnMethod;
+                var initializeMethodEntry = global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties.MyOwnMethod;
             }
 
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -436,6 +450,12 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass, global::LightSwitchApplication.JobCard>.Data _JobCards;
 
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data _MyOwnMethodCommand;
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data _MyOwnMethodMethod;
+
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -459,6 +479,15 @@ namespace LightSwitchApplication
             public sealed class CommandSet
                 : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommandSet<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>
             {
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass> MyOwnMethod
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>)base.GetItem(global::LightSwitchApplication.SearchJobCards.DetailsClass.CommandSetProperties.MyOwnMethod);
+                    }
+                }
+
             }
 
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -467,6 +496,15 @@ namespace LightSwitchApplication
             public sealed class MethodSet
                 : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethodSet<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>
             {
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass> MyOwnMethod
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>)base.GetItem(global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties.MyOwnMethod);
+                    }
+                }
+
             }
 
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -516,6 +554,21 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             internal sealed class CommandSetProperties
             {
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Entry
+                    MyOwnMethod = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Entry(
+                        "MyOwnMethod",
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.CommandSetProperties._MyOwnMethod_Stub,
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.CommandSetProperties._MyOwnMethod_CreateExecutableObject);
+                private static void _MyOwnMethod_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.SearchJobCards.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data> c, global::LightSwitchApplication.SearchJobCards.DetailsClass d, object sf)
+                {
+                    c(d, ref d._MyOwnMethodCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _MyOwnMethod_CreateExecutableObject(global::LightSwitchApplication.SearchJobCards.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.SearchJobCards.DetailsClass)d).Methods.MyOwnMethod.CreateInvocation();
+                }
+
             }
 
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -523,6 +576,28 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             internal sealed class MethodSetProperties
             {
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Entry
+                    MyOwnMethod = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Entry(
+                        "MyOwnMethod",
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties._MyOwnMethod_Stub,
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties._MyOwnMethod_CanInvoke,
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties._MyOwnMethod_InvokeMethod);
+                private static void _MyOwnMethod_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.SearchJobCards.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data> c, global::LightSwitchApplication.SearchJobCards.DetailsClass d, object sf)
+                {
+                    c(d, ref d._MyOwnMethodMethod, sf);
+                }
+                private static global::System.Exception _MyOwnMethod_CanInvoke(global::LightSwitchApplication.SearchJobCards.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Screen.MyOwnMethod_CanExecute(ref result);
+                    return result ? null : ex;
+                }
+                private static void _MyOwnMethod_InvokeMethod(global::LightSwitchApplication.SearchJobCards.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    d.Screen.MyOwnMethod_Execute();
+                }
+
             }
         }
     }
