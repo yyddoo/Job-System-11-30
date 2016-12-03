@@ -10,6 +10,7 @@ namespace LightSwitchApplication
         partial void JName_Validate(EntityValidationResultsBuilder results)
         {
             // results.AddPropertyError("<Error-Message>");
+            //make a comment
 
         }
 
