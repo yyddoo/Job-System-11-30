@@ -22,19 +22,29 @@ namespace LightSwitchApplication.Implementation
             this.___OnPropertyChanged("JID");
         }
         
+        partial void OnJobNumberChanged()
+        {
+            this.___OnPropertyChanged("JobNumber");
+        }
+        
         partial void OnJNameChanged()
         {
             this.___OnPropertyChanged("JName");
         }
         
+        partial void OnBuildingOwnerChanged()
+        {
+            this.___OnPropertyChanged("BuildingOwner");
+        }
+        
+        partial void OnGeneralContractorChanged()
+        {
+            this.___OnPropertyChanged("GeneralContractor");
+        }
+        
         partial void OnJDescriptionChanged()
         {
             this.___OnPropertyChanged("JDescription");
-        }
-        
-        partial void OnJWarrentyChanged()
-        {
-            this.___OnPropertyChanged("JWarrenty");
         }
         
         partial void OnJHoursEstmatedChanged()
@@ -62,9 +72,9 @@ namespace LightSwitchApplication.Implementation
             this.___OnPropertyChanged("JDate");
         }
         
-        partial void OnJobNumberChanged()
+        partial void OnJWarrentyChanged()
         {
-            this.___OnPropertyChanged("JobNumber");
+            this.___OnPropertyChanged("JWarrenty");
         }
         
         partial void OnWarrantyNumberChanged()
@@ -105,16 +115,6 @@ namespace LightSwitchApplication.Implementation
         partial void OnZipChanged()
         {
             this.___OnPropertyChanged("Zip");
-        }
-        
-        partial void OnGeneralContractorChanged()
-        {
-            this.___OnPropertyChanged("GeneralContractor");
-        }
-        
-        partial void OnBuildingOwnerChanged()
-        {
-            this.___OnPropertyChanged("BuildingOwner");
         }
         
     }

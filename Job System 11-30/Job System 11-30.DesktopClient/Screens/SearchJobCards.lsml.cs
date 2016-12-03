@@ -29,9 +29,10 @@ namespace LightSwitchApplication
                     jc.Delete();
                     this.Save();
                     this.Refresh();
-                    this.ShowMessageBox("Record Delted!");
+                    
+                    //this.ShowMessageBox("Record Delted!");
                 }
-                else this.ShowMessageBox("You do not have permission to do this, bro!");
+                //else this.ShowMessageBox("You do not have permission to do this, bro!");
 
                 
             }

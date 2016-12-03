@@ -155,6 +155,30 @@ namespace LightSwitchApplication.Implementation
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
+        public global::System.String JobNumber
+        {
+            get
+            {
+                return _JobNumber;
+            }
+            set
+            {
+                OnJobNumberChanging(value);
+                ReportPropertyChanging("JobNumber");
+                _JobNumber = value;
+                ReportPropertyChanged("JobNumber");
+                OnJobNumberChanged();
+            }
+        }
+        private global::System.String _JobNumber;
+        partial void OnJobNumberChanging(global::System.String value);
+        partial void OnJobNumberChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
         public global::System.String JName
         {
             get
@@ -179,6 +203,54 @@ namespace LightSwitchApplication.Implementation
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
+        public global::System.String BuildingOwner
+        {
+            get
+            {
+                return _BuildingOwner;
+            }
+            set
+            {
+                OnBuildingOwnerChanging(value);
+                ReportPropertyChanging("BuildingOwner");
+                _BuildingOwner = value;
+                ReportPropertyChanged("BuildingOwner");
+                OnBuildingOwnerChanged();
+            }
+        }
+        private global::System.String _BuildingOwner;
+        partial void OnBuildingOwnerChanging(global::System.String value);
+        partial void OnBuildingOwnerChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String GeneralContractor
+        {
+            get
+            {
+                return _GeneralContractor;
+            }
+            set
+            {
+                OnGeneralContractorChanging(value);
+                ReportPropertyChanging("GeneralContractor");
+                _GeneralContractor = value;
+                ReportPropertyChanged("GeneralContractor");
+                OnGeneralContractorChanged();
+            }
+        }
+        private global::System.String _GeneralContractor;
+        partial void OnGeneralContractorChanging(global::System.String value);
+        partial void OnGeneralContractorChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
         public global::System.String JDescription
         {
             get
@@ -197,30 +269,6 @@ namespace LightSwitchApplication.Implementation
         private global::System.String _JDescription;
         partial void OnJDescriptionChanging(global::System.String value);
         partial void OnJDescriptionChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String JWarrenty
-        {
-            get
-            {
-                return _JWarrenty;
-            }
-            set
-            {
-                OnJWarrentyChanging(value);
-                ReportPropertyChanging("JWarrenty");
-                _JWarrenty = value;
-                ReportPropertyChanged("JWarrenty");
-                OnJWarrentyChanged();
-            }
-        }
-        private global::System.String _JWarrenty;
-        partial void OnJWarrentyChanging(global::System.String value);
-        partial void OnJWarrentyChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -347,24 +395,24 @@ namespace LightSwitchApplication.Implementation
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String JobNumber
+        public global::System.String JWarrenty
         {
             get
             {
-                return _JobNumber;
+                return _JWarrenty;
             }
             set
             {
-                OnJobNumberChanging(value);
-                ReportPropertyChanging("JobNumber");
-                _JobNumber = value;
-                ReportPropertyChanged("JobNumber");
-                OnJobNumberChanged();
+                OnJWarrentyChanging(value);
+                ReportPropertyChanging("JWarrenty");
+                _JWarrenty = value;
+                ReportPropertyChanged("JWarrenty");
+                OnJWarrentyChanged();
             }
         }
-        private global::System.String _JobNumber;
-        partial void OnJobNumberChanging(global::System.String value);
-        partial void OnJobNumberChanged();
+        private global::System.String _JWarrenty;
+        partial void OnJWarrentyChanging(global::System.String value);
+        partial void OnJWarrentyChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -557,54 +605,6 @@ namespace LightSwitchApplication.Implementation
         private global::System.String _Zip;
         partial void OnZipChanging(global::System.String value);
         partial void OnZipChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String GeneralContractor
-        {
-            get
-            {
-                return _GeneralContractor;
-            }
-            set
-            {
-                OnGeneralContractorChanging(value);
-                ReportPropertyChanging("GeneralContractor");
-                _GeneralContractor = value;
-                ReportPropertyChanged("GeneralContractor");
-                OnGeneralContractorChanged();
-            }
-        }
-        private global::System.String _GeneralContractor;
-        partial void OnGeneralContractorChanging(global::System.String value);
-        partial void OnGeneralContractorChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String BuildingOwner
-        {
-            get
-            {
-                return _BuildingOwner;
-            }
-            set
-            {
-                OnBuildingOwnerChanging(value);
-                ReportPropertyChanging("BuildingOwner");
-                _BuildingOwner = value;
-                ReportPropertyChanged("BuildingOwner");
-                OnBuildingOwnerChanged();
-            }
-        }
-        private global::System.String _BuildingOwner;
-        partial void OnBuildingOwnerChanging(global::System.String value);
-        partial void OnBuildingOwnerChanged();
 
         #endregion
 

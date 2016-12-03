@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 12/2/2016 7:55:54 PM
+// Generation date: 12/2/2016 9:19:47 PM
 namespace LightSwitchApplication.Implementation
 {
     
@@ -98,35 +98,34 @@ namespace LightSwitchApplication.Implementation
                 "pace=\"LightSwitchApplication\" Alias=\"Self\" xmlns=\"http://schemas.microsoft.com/a" +
                 "do/2008/09/edm\"><EntityType Name=\"JobCard\"><Key><PropertyRef Name=\"JID\" /></Key>" +
                 "<Property Name=\"JID\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGenerated" +
-                "Pattern=\"Identity\" /><Property Name=\"JName\" Type=\"Edm.String\" MaxLength=\"Max\" Un" +
-                "icode=\"false\" /><Property Name=\"JDescription\" Type=\"Edm.String\" MaxLength=\"Max\" " +
-                "Unicode=\"false\" /><Property Name=\"JWarrenty\" Type=\"Edm.String\" MaxLength=\"Max\" U" +
-                "nicode=\"false\" /><Property Name=\"JHoursEstmated\" Type=\"Edm.Decimal\" Precision=\"1" +
-                "8\" Scale=\"0\" ConcurrencyMode=\"Fixed\" /><Property Name=\"JHoursTook\" Type=\"Edm.Dec" +
-                "imal\" Precision=\"18\" Scale=\"0\" ConcurrencyMode=\"Fixed\" /><Property Name=\"JPrice\"" +
-                " Type=\"Edm.Decimal\" Precision=\"19\" Scale=\"4\" ConcurrencyMode=\"Fixed\" /><Property" +
-                " Name=\"JSquares\" Type=\"Edm.Decimal\" Precision=\"18\" Scale=\"0\" ConcurrencyMode=\"Fi" +
-                "xed\" /><Property Name=\"JDate\" Type=\"Edm.DateTime\" Precision=\"0\" ConcurrencyMode=" +
-                "\"Fixed\" /><Property Name=\"JobNumber\" Type=\"Edm.String\" MaxLength=\"10\" FixedLengt" +
-                "h=\"true\" ConcurrencyMode=\"Fixed\" /><Property Name=\"WarrantyNumber\" Type=\"Edm.Str" +
-                "ing\" MaxLength=\"10\" FixedLength=\"true\" ConcurrencyMode=\"Fixed\" /><Property Name=" +
-                "\"WarrantyStart\" Type=\"Edm.DateTime\" Precision=\"0\" ConcurrencyMode=\"Fixed\" /><Pro" +
-                "perty Name=\"WarrantyEnd\" Type=\"Edm.DateTime\" Precision=\"0\" ConcurrencyMode=\"Fixe" +
-                "d\" /><Property Name=\"Address1\" Type=\"Edm.String\" MaxLength=\"Max\" Unicode=\"false\"" +
-                " /><Property Name=\"Address2\" Type=\"Edm.String\" MaxLength=\"Max\" Unicode=\"false\" /" +
-                "><Property Name=\"City\" Type=\"Edm.String\" MaxLength=\"Max\" Unicode=\"false\" /><Prop" +
-                "erty Name=\"State\" Type=\"Edm.String\" MaxLength=\"10\" FixedLength=\"true\" Concurrenc" +
-                "yMode=\"Fixed\" /><Property Name=\"Zip\" Type=\"Edm.String\" MaxLength=\"10\" FixedLengt" +
-                "h=\"true\" ConcurrencyMode=\"Fixed\" /><Property Name=\"GeneralContractor\" Type=\"Edm." +
-                "String\" MaxLength=\"Max\" Unicode=\"false\" /><Property Name=\"BuildingOwner\" Type=\"E" +
-                "dm.String\" MaxLength=\"Max\" Unicode=\"false\" /></EntityType><EntityContainer Name=" +
-                "\"MRC_DataBaseData\" m:IsDefaultEntityContainer=\"true\"><EntitySet Name=\"JobCards\" " +
-                "EntityType=\"LightSwitchApplication.JobCard\" /><FunctionImport Name=\"Query1\" Retu" +
-                "rnType=\"Collection(LightSwitchApplication.JobCard)\" EntitySet=\"JobCards\" m:HttpM" +
-                "ethod=\"GET\" /><FunctionImport Name=\"Microsoft_LightSwitch_GetCanInformation\" Ret" +
-                "urnType=\"Edm.String\" m:HttpMethod=\"GET\"><Parameter Name=\"dataServiceMembers\" Typ" +
-                "e=\"Edm.String\" Mode=\"In\" /></FunctionImport></EntityContainer></Schema></edmx:Da" +
-                "taServices></edmx:Edmx>";
+                "Pattern=\"Identity\" /><Property Name=\"JobNumber\" Type=\"Edm.String\" MaxLength=\"Max" +
+                "\" Unicode=\"false\" /><Property Name=\"JName\" Type=\"Edm.String\" MaxLength=\"Max\" Uni" +
+                "code=\"false\" /><Property Name=\"BuildingOwner\" Type=\"Edm.String\" MaxLength=\"Max\" " +
+                "Unicode=\"false\" /><Property Name=\"GeneralContractor\" Type=\"Edm.String\" MaxLength" +
+                "=\"Max\" Unicode=\"false\" /><Property Name=\"JDescription\" Type=\"Edm.String\" MaxLeng" +
+                "th=\"Max\" Unicode=\"false\" /><Property Name=\"JHoursEstmated\" Type=\"Edm.Decimal\" Pr" +
+                "ecision=\"18\" Scale=\"0\" ConcurrencyMode=\"Fixed\" /><Property Name=\"JHoursTook\" Typ" +
+                "e=\"Edm.Decimal\" Precision=\"18\" Scale=\"0\" ConcurrencyMode=\"Fixed\" /><Property Nam" +
+                "e=\"JPrice\" Type=\"Edm.Decimal\" Precision=\"19\" Scale=\"4\" ConcurrencyMode=\"Fixed\" /" +
+                "><Property Name=\"JSquares\" Type=\"Edm.Decimal\" Precision=\"18\" Scale=\"0\" Concurren" +
+                "cyMode=\"Fixed\" /><Property Name=\"JDate\" Type=\"Edm.DateTime\" Precision=\"0\" Concur" +
+                "rencyMode=\"Fixed\" /><Property Name=\"JWarrenty\" Type=\"Edm.String\" MaxLength=\"Max\"" +
+                " Unicode=\"false\" /><Property Name=\"WarrantyNumber\" Type=\"Edm.String\" MaxLength=\"" +
+                "Max\" Unicode=\"false\" /><Property Name=\"WarrantyStart\" Type=\"Edm.DateTime\" Precis" +
+                "ion=\"0\" ConcurrencyMode=\"Fixed\" /><Property Name=\"WarrantyEnd\" Type=\"Edm.DateTim" +
+                "e\" Precision=\"0\" ConcurrencyMode=\"Fixed\" /><Property Name=\"Address1\" Type=\"Edm.S" +
+                "tring\" MaxLength=\"Max\" Unicode=\"false\" /><Property Name=\"Address2\" Type=\"Edm.Str" +
+                "ing\" MaxLength=\"Max\" Unicode=\"false\" /><Property Name=\"City\" Type=\"Edm.String\" M" +
+                "axLength=\"Max\" Unicode=\"false\" /><Property Name=\"State\" Type=\"Edm.String\" MaxLen" +
+                "gth=\"10\" FixedLength=\"true\" ConcurrencyMode=\"Fixed\" /><Property Name=\"Zip\" Type=" +
+                "\"Edm.String\" MaxLength=\"10\" FixedLength=\"true\" ConcurrencyMode=\"Fixed\" /></Entit" +
+                "yType><EntityContainer Name=\"MRC_DataBaseData\" m:IsDefaultEntityContainer=\"true\"" +
+                "><EntitySet Name=\"JobCards\" EntityType=\"LightSwitchApplication.JobCard\" /><Funct" +
+                "ionImport Name=\"Query1\" ReturnType=\"Collection(LightSwitchApplication.JobCard)\" " +
+                "EntitySet=\"JobCards\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"Microsoft_LightS" +
+                "witch_GetCanInformation\" ReturnType=\"Edm.String\" m:HttpMethod=\"GET\"><Parameter N" +
+                "ame=\"dataServiceMembers\" Type=\"Edm.String\" Mode=\"In\" /></FunctionImport></Entity" +
+                "Container></Schema></edmx:DataServices></edmx:Edmx>";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             private static string GetConcatenatedEdmxString()
             {
@@ -206,6 +205,32 @@ namespace LightSwitchApplication.Implementation
         partial void OnJIDChanging(int value);
         partial void OnJIDChanged();
         /// <summary>
+        /// There are no comments for Property JobNumber in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string JobNumber
+        {
+            get
+            {
+                return this._JobNumber;
+            }
+            set
+            {
+                this.OnJobNumberChanging(value);
+                if (object.Equals(this.JobNumber, value))
+                {
+                    return;
+                }
+                this._JobNumber = value;
+                this.OnJobNumberChanged();
+                this.OnPropertyChanged("JobNumber");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _JobNumber;
+        partial void OnJobNumberChanging(string value);
+        partial void OnJobNumberChanged();
+        /// <summary>
         /// There are no comments for Property JName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -232,6 +257,58 @@ namespace LightSwitchApplication.Implementation
         partial void OnJNameChanging(string value);
         partial void OnJNameChanged();
         /// <summary>
+        /// There are no comments for Property BuildingOwner in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string BuildingOwner
+        {
+            get
+            {
+                return this._BuildingOwner;
+            }
+            set
+            {
+                this.OnBuildingOwnerChanging(value);
+                if (object.Equals(this.BuildingOwner, value))
+                {
+                    return;
+                }
+                this._BuildingOwner = value;
+                this.OnBuildingOwnerChanged();
+                this.OnPropertyChanged("BuildingOwner");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _BuildingOwner;
+        partial void OnBuildingOwnerChanging(string value);
+        partial void OnBuildingOwnerChanged();
+        /// <summary>
+        /// There are no comments for Property GeneralContractor in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string GeneralContractor
+        {
+            get
+            {
+                return this._GeneralContractor;
+            }
+            set
+            {
+                this.OnGeneralContractorChanging(value);
+                if (object.Equals(this.GeneralContractor, value))
+                {
+                    return;
+                }
+                this._GeneralContractor = value;
+                this.OnGeneralContractorChanged();
+                this.OnPropertyChanged("GeneralContractor");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _GeneralContractor;
+        partial void OnGeneralContractorChanging(string value);
+        partial void OnGeneralContractorChanged();
+        /// <summary>
         /// There are no comments for Property JDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -257,32 +334,6 @@ namespace LightSwitchApplication.Implementation
         private string _JDescription;
         partial void OnJDescriptionChanging(string value);
         partial void OnJDescriptionChanged();
-        /// <summary>
-        /// There are no comments for Property JWarrenty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string JWarrenty
-        {
-            get
-            {
-                return this._JWarrenty;
-            }
-            set
-            {
-                this.OnJWarrentyChanging(value);
-                if (object.Equals(this.JWarrenty, value))
-                {
-                    return;
-                }
-                this._JWarrenty = value;
-                this.OnJWarrentyChanged();
-                this.OnPropertyChanged("JWarrenty");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _JWarrenty;
-        partial void OnJWarrentyChanging(string value);
-        partial void OnJWarrentyChanged();
         /// <summary>
         /// There are no comments for Property JHoursEstmated in the schema.
         /// </summary>
@@ -414,31 +465,31 @@ namespace LightSwitchApplication.Implementation
         partial void OnJDateChanging(global::System.Nullable<global::System.DateTime> value);
         partial void OnJDateChanged();
         /// <summary>
-        /// There are no comments for Property JobNumber in the schema.
+        /// There are no comments for Property JWarrenty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string JobNumber
+        public string JWarrenty
         {
             get
             {
-                return this._JobNumber;
+                return this._JWarrenty;
             }
             set
             {
-                this.OnJobNumberChanging(value);
-                if (object.Equals(this.JobNumber, value))
+                this.OnJWarrentyChanging(value);
+                if (object.Equals(this.JWarrenty, value))
                 {
                     return;
                 }
-                this._JobNumber = value;
-                this.OnJobNumberChanged();
-                this.OnPropertyChanged("JobNumber");
+                this._JWarrenty = value;
+                this.OnJWarrentyChanged();
+                this.OnPropertyChanged("JWarrenty");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _JobNumber;
-        partial void OnJobNumberChanging(string value);
-        partial void OnJobNumberChanged();
+        private string _JWarrenty;
+        partial void OnJWarrentyChanging(string value);
+        partial void OnJWarrentyChanged();
         /// <summary>
         /// There are no comments for Property WarrantyNumber in the schema.
         /// </summary>
@@ -647,58 +698,6 @@ namespace LightSwitchApplication.Implementation
         private string _Zip;
         partial void OnZipChanging(string value);
         partial void OnZipChanged();
-        /// <summary>
-        /// There are no comments for Property GeneralContractor in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string GeneralContractor
-        {
-            get
-            {
-                return this._GeneralContractor;
-            }
-            set
-            {
-                this.OnGeneralContractorChanging(value);
-                if (object.Equals(this.GeneralContractor, value))
-                {
-                    return;
-                }
-                this._GeneralContractor = value;
-                this.OnGeneralContractorChanged();
-                this.OnPropertyChanged("GeneralContractor");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _GeneralContractor;
-        partial void OnGeneralContractorChanging(string value);
-        partial void OnGeneralContractorChanged();
-        /// <summary>
-        /// There are no comments for Property BuildingOwner in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string BuildingOwner
-        {
-            get
-            {
-                return this._BuildingOwner;
-            }
-            set
-            {
-                this.OnBuildingOwnerChanging(value);
-                if (object.Equals(this.BuildingOwner, value))
-                {
-                    return;
-                }
-                this._BuildingOwner = value;
-                this.OnBuildingOwnerChanged();
-                this.OnPropertyChanged("BuildingOwner");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _BuildingOwner;
-        partial void OnBuildingOwnerChanging(string value);
-        partial void OnBuildingOwnerChanged();
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]

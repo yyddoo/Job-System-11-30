@@ -26,6 +26,15 @@
         </KeyProperty.Attributes>
       </KeyProperty>
       <EntityProperty
+        Name="JobNumber"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+          <NotSortable />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="JName"
         PropertyType=":String?">
         <EntityProperty.Attributes>
@@ -37,6 +46,24 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
+        Name="BuildingOwner"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <NotSortable />
+          <MaxLength />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GeneralContractor"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <NotSortable />
+          <MaxLength />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="JDescription"
         PropertyType=":String?">
         <EntityProperty.Attributes>
@@ -45,59 +72,6 @@
           <AnsiConstraint />
           <DisplayName
             Value="Description" />
-        </EntityProperty.Attributes>
-      </EntityProperty>
-      <EntityProperty
-        Name="JWarrenty"
-        PropertyType=":String?">
-        <EntityProperty.Attributes>
-          <NotSortable />
-          <MaxLength />
-          <AnsiConstraint />
-          <DisplayName
-            Value="Warrenty" />
-          <SupportedValue
-            DisplayName="No Warranty"
-            Value="NoWarr" />
-          <SupportedValue
-            DisplayName="Firestone 10 Year"
-            Value="Firestone10" />
-          <SupportedValue
-            DisplayName="Firestone 15 Year"
-            Value="Firestone15" />
-          <SupportedValue
-            DisplayName="Firestone 20 Year"
-            Value="Firestone20" />
-          <SupportedValue
-            DisplayName="Carlisle 10 Year"
-            Value="Carlisle10" />
-          <SupportedValue
-            DisplayName="Carlisle 15 Year"
-            Value="Carlisle15" />
-          <SupportedValue
-            DisplayName="Carlisle 20 Year"
-            Value="Carlisle20" />
-          <SupportedValue
-            DisplayName="MRC 2 Year"
-            Value="MRC2yr" />
-          <SupportedValue
-            DisplayName="Berridge Kynar Finish"
-            Value="Berridge" />
-          <SupportedValue
-            DisplayName="JM 10 Year"
-            Value="Jm10" />
-          <SupportedValue
-            DisplayName="JM 15 Year"
-            Value="jm15" />
-          <SupportedValue
-            DisplayName="JM 20 Year"
-            Value="jm20" />
-          <SupportedValue
-            DisplayName="Tremco"
-            Value="tremco" />
-          <SupportedValue
-            DisplayName="Garland"
-            Value="Garland" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -161,21 +135,65 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
-        Name="JobNumber"
+        Name="JWarrenty"
         PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength
-            IsFixedLength="True"
-            Value="10" />
+          <NotSortable />
+          <MaxLength />
+          <AnsiConstraint />
+          <DisplayName
+            Value="Warrenty" />
+          <SupportedValue
+            DisplayName="No Warranty"
+            Value="NoWarr" />
+          <SupportedValue
+            DisplayName="Firestone 10 Year"
+            Value="Firestone10" />
+          <SupportedValue
+            DisplayName="Firestone 15 Year"
+            Value="Firestone15" />
+          <SupportedValue
+            DisplayName="Firestone 20 Year"
+            Value="Firestone20" />
+          <SupportedValue
+            DisplayName="Carlisle 10 Year"
+            Value="Carlisle10" />
+          <SupportedValue
+            DisplayName="Carlisle 15 Year"
+            Value="Carlisle15" />
+          <SupportedValue
+            DisplayName="Carlisle 20 Year"
+            Value="Carlisle20" />
+          <SupportedValue
+            DisplayName="MRC 2 Year"
+            Value="MRC2yr" />
+          <SupportedValue
+            DisplayName="Berridge Kynar Finish"
+            Value="Berridge" />
+          <SupportedValue
+            DisplayName="JM 10 Year"
+            Value="Jm10" />
+          <SupportedValue
+            DisplayName="JM 15 Year"
+            Value="jm15" />
+          <SupportedValue
+            DisplayName="JM 20 Year"
+            Value="jm20" />
+          <SupportedValue
+            DisplayName="Tremco"
+            Value="tremco" />
+          <SupportedValue
+            DisplayName="Garland"
+            Value="Garland" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
         Name="WarrantyNumber"
         PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength
-            IsFixedLength="True"
-            Value="10" />
+          <MaxLength />
+          <NotSortable />
+          <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -241,24 +259,6 @@
           <MaxLength
             IsFixedLength="True"
             Value="10" />
-        </EntityProperty.Attributes>
-      </EntityProperty>
-      <EntityProperty
-        Name="GeneralContractor"
-        PropertyType=":String?">
-        <EntityProperty.Attributes>
-          <NotSortable />
-          <MaxLength />
-          <AnsiConstraint />
-        </EntityProperty.Attributes>
-      </EntityProperty>
-      <EntityProperty
-        Name="BuildingOwner"
-        PropertyType=":String?">
-        <EntityProperty.Attributes>
-          <NotSortable />
-          <MaxLength />
-          <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
     </EntityType.Properties>
@@ -390,12 +390,12 @@
         <SsdlProperty
           Name="JHoursEstmated"
           Nullable="True"
-          Type="numeric"
+          Type="decimal"
           Property="JobCard/Properties[JHoursEstmated]" />
         <SsdlProperty
           Name="JHoursTook"
           Nullable="True"
-          Type="numeric"
+          Type="decimal"
           Property="JobCard/Properties[JHoursTook]" />
         <SsdlProperty
           Name="JPrice"
@@ -405,7 +405,7 @@
         <SsdlProperty
           Name="JSquares"
           Nullable="True"
-          Type="numeric"
+          Type="decimal"
           Property="JobCard/Properties[JSquares]" />
         <SsdlProperty
           Name="JDate"
@@ -413,16 +413,14 @@
           Type="date"
           Property="JobCard/Properties[JDate]" />
         <SsdlProperty
-          MaxLength="10"
           Name="JobNumber"
           Nullable="True"
-          Type="nchar"
+          Type="text"
           Property="JobCard/Properties[JobNumber]" />
         <SsdlProperty
-          MaxLength="10"
           Name="WarrantyNumber"
           Nullable="True"
-          Type="nchar"
+          Type="text"
           Property="JobCard/Properties[WarrantyNumber]" />
         <SsdlProperty
           Name="WarrantyStart"

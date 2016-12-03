@@ -5,16 +5,18 @@
       <PropertyRef Name="JID" />
     </Key>
     <Property Name="JID" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobNumber" Type="Edm.String" MaxLength="Max" Unicode="false" />
     <Property Name="JName" Type="Edm.String" MaxLength="Max" Unicode="false" />
+    <Property Name="BuildingOwner" Type="Edm.String" MaxLength="Max" Unicode="false" />
+    <Property Name="GeneralContractor" Type="Edm.String" MaxLength="Max" Unicode="false" />
     <Property Name="JDescription" Type="Edm.String" MaxLength="Max" Unicode="false" />
-    <Property Name="JWarrenty" Type="Edm.String" MaxLength="Max" Unicode="false" />
     <Property Name="JHoursEstmated" Type="Edm.Decimal" Precision="18" Scale="0" ConcurrencyMode="Fixed" />
     <Property Name="JHoursTook" Type="Edm.Decimal" Precision="18" Scale="0" ConcurrencyMode="Fixed" />
     <Property Name="JPrice" Type="Edm.Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
     <Property Name="JSquares" Type="Edm.Decimal" Precision="18" Scale="0" ConcurrencyMode="Fixed" />
     <Property Name="JDate" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
-    <Property Name="JobNumber" Type="Edm.String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
-    <Property Name="WarrantyNumber" Type="Edm.String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="JWarrenty" Type="Edm.String" MaxLength="Max" Unicode="false" />
+    <Property Name="WarrantyNumber" Type="Edm.String" MaxLength="Max" Unicode="false" />
     <Property Name="WarrantyStart" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
     <Property Name="WarrantyEnd" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
     <Property Name="Address1" Type="Edm.String" MaxLength="Max" Unicode="false" />
@@ -22,8 +24,6 @@
     <Property Name="City" Type="Edm.String" MaxLength="Max" Unicode="false" />
     <Property Name="State" Type="Edm.String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
     <Property Name="Zip" Type="Edm.String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
-    <Property Name="GeneralContractor" Type="Edm.String" MaxLength="Max" Unicode="false" />
-    <Property Name="BuildingOwner" Type="Edm.String" MaxLength="Max" Unicode="false" />
   </EntityType>
   <EntityContainer Name="MRC_DataBaseData" m:IsDefaultEntityContainer="true">
     <EntitySet Name="JobCards" EntityType="LightSwitchApplication.JobCard" />

@@ -268,18 +268,18 @@
         Name="JobNumber"
         PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength
-            IsFixedLength="True"
-            Value="10" />
+          <MaxLength />
+          <NotSortable />
+          <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
         Name="WarrantyNumber"
         PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength
-            IsFixedLength="True"
-            Value="10" />
+          <MaxLength />
+          <NotSortable />
+          <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -1048,22 +1048,12 @@
             </ContentItem.DataSource>
           </ContentItem>
           <ContentItem
-            Name="DeleteJobCard"
-            Kind="Command">
-            <ContentItem.DataSource>
-              <ScreenExpressionTree>
-                <ChainExpression>
-                  <MemberExpression
-                    Member="SearchJobCards/Properties[JobCards]" />
-                  <CallExpression
-                    Target="DeleteSelected" />
-                </ChainExpression>
-              </ScreenExpressionTree>
-            </ContentItem.DataSource>
-          </ContentItem>
-          <ContentItem
             Name="MyOwnMethod"
             Kind="Command">
+            <ContentItem.Attributes>
+              <DisplayName
+                Value="Delete" />
+            </ContentItem.Attributes>
             <ContentItem.DataSource>
               <ScreenExpressionTree>
                 <ChainExpression>

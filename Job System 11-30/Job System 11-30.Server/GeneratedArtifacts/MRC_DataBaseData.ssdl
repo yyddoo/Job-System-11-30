@@ -8,16 +8,18 @@
       <PropertyRef Name="JID" />
     </Key>
     <Property Name="JID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobNumber" Type="text" />
     <Property Name="JName" Type="text" />
+    <Property Name="BuildingOwner" Type="text" />
+    <Property Name="GeneralContractor" Type="text" />
     <Property Name="JDescription" Type="text" />
-    <Property Name="JWarrenty" Type="text" />
-    <Property Name="JHoursEstmated" Type="numeric" />
-    <Property Name="JHoursTook" Type="numeric" />
+    <Property Name="JHoursEstmated" Type="decimal" />
+    <Property Name="JHoursTook" Type="decimal" />
     <Property Name="JPrice" Type="money" />
-    <Property Name="JSquares" Type="numeric" />
+    <Property Name="JSquares" Type="decimal" />
     <Property Name="JDate" Type="date" />
-    <Property Name="JobNumber" Type="nchar" MaxLength="10" />
-    <Property Name="WarrantyNumber" Type="nchar" MaxLength="10" />
+    <Property Name="JWarrenty" Type="text" />
+    <Property Name="WarrantyNumber" Type="text" />
     <Property Name="WarrantyStart" Type="date" />
     <Property Name="WarrantyEnd" Type="date" />
     <Property Name="Address1" Type="text" />
@@ -25,7 +27,5 @@
     <Property Name="City" Type="text" />
     <Property Name="State" Type="nchar" MaxLength="10" />
     <Property Name="Zip" Type="nchar" MaxLength="10" />
-    <Property Name="GeneralContractor" Type="text" />
-    <Property Name="BuildingOwner" Type="text" />
   </EntityType>
 </Schema>

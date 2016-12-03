@@ -103,6 +103,30 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string JobNumber
+        {
+            get
+            {
+                return global::LightSwitchApplication.JobCard.DetailsClass.GetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JobNumber);
+            }
+            set
+            {
+                global::LightSwitchApplication.JobCard.DetailsClass.SetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JobNumber, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void JobNumber_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void JobNumber_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void JobNumber_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string JName
         {
             get
@@ -127,6 +151,54 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string BuildingOwner
+        {
+            get
+            {
+                return global::LightSwitchApplication.JobCard.DetailsClass.GetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.BuildingOwner);
+            }
+            set
+            {
+                global::LightSwitchApplication.JobCard.DetailsClass.SetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.BuildingOwner, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void BuildingOwner_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void BuildingOwner_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void BuildingOwner_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string GeneralContractor
+        {
+            get
+            {
+                return global::LightSwitchApplication.JobCard.DetailsClass.GetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.GeneralContractor);
+            }
+            set
+            {
+                global::LightSwitchApplication.JobCard.DetailsClass.SetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.GeneralContractor, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GeneralContractor_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GeneralContractor_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GeneralContractor_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string JDescription
         {
             get
@@ -145,30 +217,6 @@ namespace LightSwitchApplication
         partial void JDescription_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void JDescription_Changed();
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string JWarrenty
-        {
-            get
-            {
-                return global::LightSwitchApplication.JobCard.DetailsClass.GetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JWarrenty);
-            }
-            set
-            {
-                global::LightSwitchApplication.JobCard.DetailsClass.SetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JWarrenty, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void JWarrenty_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void JWarrenty_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void JWarrenty_Changed();
 
         /// <summary>
         /// No Modeled Description Available
@@ -295,24 +343,24 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string JobNumber
+        public string JWarrenty
         {
             get
             {
-                return global::LightSwitchApplication.JobCard.DetailsClass.GetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JobNumber);
+                return global::LightSwitchApplication.JobCard.DetailsClass.GetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JWarrenty);
             }
             set
             {
-                global::LightSwitchApplication.JobCard.DetailsClass.SetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JobNumber, value);
+                global::LightSwitchApplication.JobCard.DetailsClass.SetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JWarrenty, value);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void JobNumber_IsReadOnly(ref bool result);
+        partial void JWarrenty_IsReadOnly(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void JobNumber_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void JWarrenty_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void JobNumber_Changed();
+        partial void JWarrenty_Changed();
 
         /// <summary>
         /// No Modeled Description Available
@@ -506,54 +554,6 @@ namespace LightSwitchApplication
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void Zip_Changed();
 
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string GeneralContractor
-        {
-            get
-            {
-                return global::LightSwitchApplication.JobCard.DetailsClass.GetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.GeneralContractor);
-            }
-            set
-            {
-                global::LightSwitchApplication.JobCard.DetailsClass.SetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.GeneralContractor, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void GeneralContractor_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void GeneralContractor_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void GeneralContractor_Changed();
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string BuildingOwner
-        {
-            get
-            {
-                return global::LightSwitchApplication.JobCard.DetailsClass.GetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.BuildingOwner);
-            }
-            set
-            {
-                global::LightSwitchApplication.JobCard.DetailsClass.SetValue(this, global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.BuildingOwner, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void BuildingOwner_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void BuildingOwner_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void BuildingOwner_Changed();
-
         #endregion
     
         #region Details Class
@@ -644,6 +644,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> JobNumber
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JobNumber) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> JName
                 {
                     get
@@ -652,19 +660,27 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> BuildingOwner
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.BuildingOwner) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> GeneralContractor
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.GeneralContractor) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> JDescription
                 {
                     get
                     {
                         return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JDescription) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
-                    }
-                }
-                
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> JWarrenty
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JWarrenty) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
                     }
                 }
                 
@@ -708,11 +724,11 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> JobNumber
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> JWarrenty
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JobNumber) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.JWarrenty) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
                     }
                 }
                 
@@ -780,22 +796,6 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> GeneralContractor
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.GeneralContractor) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
-                    }
-                }
-                
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string> BuildingOwner
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties.BuildingOwner) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>;
-                    }
-                }
-                
             }
     
             #pragma warning disable 109
@@ -803,15 +803,17 @@ namespace LightSwitchApplication
             public interface IImplementation : global::Microsoft.LightSwitch.Internal.IEntityImplementation
             {
                 new int JID { get; }
+                new string JobNumber { get; set; }
                 new string JName { get; set; }
+                new string BuildingOwner { get; set; }
+                new string GeneralContractor { get; set; }
                 new string JDescription { get; set; }
-                new string JWarrenty { get; set; }
                 new global::System.Nullable<decimal> JHoursEstmated { get; set; }
                 new global::System.Nullable<decimal> JHoursTook { get; set; }
                 new global::System.Nullable<decimal> JPrice { get; set; }
                 new global::System.Nullable<decimal> JSquares { get; set; }
                 new global::System.Nullable<global::System.DateTime> JDate { get; set; }
-                new string JobNumber { get; set; }
+                new string JWarrenty { get; set; }
                 new string WarrantyNumber { get; set; }
                 new global::System.Nullable<global::System.DateTime> WarrantyStart { get; set; }
                 new global::System.Nullable<global::System.DateTime> WarrantyEnd { get; set; }
@@ -820,8 +822,6 @@ namespace LightSwitchApplication
                 new string City { get; set; }
                 new string State { get; set; }
                 new string Zip { get; set; }
-                new string GeneralContractor { get; set; }
-                new string BuildingOwner { get; set; }
             }
             #pragma warning restore 109
     
@@ -866,6 +866,43 @@ namespace LightSwitchApplication
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
+                    JobNumber = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
+                        "JobNumber",
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_Stub,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_ComputeIsReadOnly,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_Validate,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_GetImplementationValue,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_SetImplementationValue,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_OnValueChanged);
+                private static void _JobNumber_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.JobCard.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data> c, global::LightSwitchApplication.JobCard.DetailsClass d, object sf)
+                {
+                    c(d, ref d._JobNumber, sf);
+                }
+                private static bool _JobNumber_ComputeIsReadOnly(global::LightSwitchApplication.JobCard e)
+                {
+                    bool result = false;
+                    e.JobNumber_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _JobNumber_Validate(global::LightSwitchApplication.JobCard e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.JobNumber_Validate(r);
+                }
+                private static string _JobNumber_GetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d)
+                {
+                    return d.ImplementationEntity.JobNumber;
+                }
+                private static void _JobNumber_SetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.JobNumber = v;
+                }
+                private static void _JobNumber_OnValueChanged(global::LightSwitchApplication.JobCard e)
+                {
+                    e.JobNumber_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
                     JName = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
                         "JName",
                         global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JName_Stub,
@@ -903,6 +940,80 @@ namespace LightSwitchApplication
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
+                    BuildingOwner = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
+                        "BuildingOwner",
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_Stub,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_ComputeIsReadOnly,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_Validate,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_GetImplementationValue,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_SetImplementationValue,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_OnValueChanged);
+                private static void _BuildingOwner_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.JobCard.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data> c, global::LightSwitchApplication.JobCard.DetailsClass d, object sf)
+                {
+                    c(d, ref d._BuildingOwner, sf);
+                }
+                private static bool _BuildingOwner_ComputeIsReadOnly(global::LightSwitchApplication.JobCard e)
+                {
+                    bool result = false;
+                    e.BuildingOwner_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _BuildingOwner_Validate(global::LightSwitchApplication.JobCard e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.BuildingOwner_Validate(r);
+                }
+                private static string _BuildingOwner_GetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d)
+                {
+                    return d.ImplementationEntity.BuildingOwner;
+                }
+                private static void _BuildingOwner_SetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.BuildingOwner = v;
+                }
+                private static void _BuildingOwner_OnValueChanged(global::LightSwitchApplication.JobCard e)
+                {
+                    e.BuildingOwner_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
+                    GeneralContractor = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
+                        "GeneralContractor",
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_Stub,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_ComputeIsReadOnly,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_Validate,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_GetImplementationValue,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_SetImplementationValue,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_OnValueChanged);
+                private static void _GeneralContractor_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.JobCard.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data> c, global::LightSwitchApplication.JobCard.DetailsClass d, object sf)
+                {
+                    c(d, ref d._GeneralContractor, sf);
+                }
+                private static bool _GeneralContractor_ComputeIsReadOnly(global::LightSwitchApplication.JobCard e)
+                {
+                    bool result = false;
+                    e.GeneralContractor_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _GeneralContractor_Validate(global::LightSwitchApplication.JobCard e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.GeneralContractor_Validate(r);
+                }
+                private static string _GeneralContractor_GetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d)
+                {
+                    return d.ImplementationEntity.GeneralContractor;
+                }
+                private static void _GeneralContractor_SetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.GeneralContractor = v;
+                }
+                private static void _GeneralContractor_OnValueChanged(global::LightSwitchApplication.JobCard e)
+                {
+                    e.GeneralContractor_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
                     JDescription = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
                         "JDescription",
                         global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JDescription_Stub,
@@ -936,43 +1047,6 @@ namespace LightSwitchApplication
                 private static void _JDescription_OnValueChanged(global::LightSwitchApplication.JobCard e)
                 {
                     e.JDescription_Changed();
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
-                    JWarrenty = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
-                        "JWarrenty",
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_Stub,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_ComputeIsReadOnly,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_Validate,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_GetImplementationValue,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_SetImplementationValue,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_OnValueChanged);
-                private static void _JWarrenty_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.JobCard.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data> c, global::LightSwitchApplication.JobCard.DetailsClass d, object sf)
-                {
-                    c(d, ref d._JWarrenty, sf);
-                }
-                private static bool _JWarrenty_ComputeIsReadOnly(global::LightSwitchApplication.JobCard e)
-                {
-                    bool result = false;
-                    e.JWarrenty_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _JWarrenty_Validate(global::LightSwitchApplication.JobCard e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.JWarrenty_Validate(r);
-                }
-                private static string _JWarrenty_GetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d)
-                {
-                    return d.ImplementationEntity.JWarrenty;
-                }
-                private static void _JWarrenty_SetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d, string v)
-                {
-                    d.ImplementationEntity.JWarrenty = v;
-                }
-                private static void _JWarrenty_OnValueChanged(global::LightSwitchApplication.JobCard e)
-                {
-                    e.JWarrenty_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -1162,39 +1236,39 @@ namespace LightSwitchApplication
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
-                    JobNumber = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
-                        "JobNumber",
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_Stub,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_ComputeIsReadOnly,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_Validate,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_GetImplementationValue,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_SetImplementationValue,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JobNumber_OnValueChanged);
-                private static void _JobNumber_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.JobCard.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data> c, global::LightSwitchApplication.JobCard.DetailsClass d, object sf)
+                    JWarrenty = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
+                        "JWarrenty",
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_Stub,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_ComputeIsReadOnly,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_Validate,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_GetImplementationValue,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_SetImplementationValue,
+                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._JWarrenty_OnValueChanged);
+                private static void _JWarrenty_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.JobCard.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data> c, global::LightSwitchApplication.JobCard.DetailsClass d, object sf)
                 {
-                    c(d, ref d._JobNumber, sf);
+                    c(d, ref d._JWarrenty, sf);
                 }
-                private static bool _JobNumber_ComputeIsReadOnly(global::LightSwitchApplication.JobCard e)
+                private static bool _JWarrenty_ComputeIsReadOnly(global::LightSwitchApplication.JobCard e)
                 {
                     bool result = false;
-                    e.JobNumber_IsReadOnly(ref result);
+                    e.JWarrenty_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _JobNumber_Validate(global::LightSwitchApplication.JobCard e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _JWarrenty_Validate(global::LightSwitchApplication.JobCard e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.JobNumber_Validate(r);
+                    e.JWarrenty_Validate(r);
                 }
-                private static string _JobNumber_GetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d)
+                private static string _JWarrenty_GetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d)
                 {
-                    return d.ImplementationEntity.JobNumber;
+                    return d.ImplementationEntity.JWarrenty;
                 }
-                private static void _JobNumber_SetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d, string v)
+                private static void _JWarrenty_SetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d, string v)
                 {
-                    d.ImplementationEntity.JobNumber = v;
+                    d.ImplementationEntity.JWarrenty = v;
                 }
-                private static void _JobNumber_OnValueChanged(global::LightSwitchApplication.JobCard e)
+                private static void _JWarrenty_OnValueChanged(global::LightSwitchApplication.JobCard e)
                 {
-                    e.JobNumber_Changed();
+                    e.JWarrenty_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -1493,93 +1567,25 @@ namespace LightSwitchApplication
                     e.Zip_Changed();
                 }
     
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
-                    GeneralContractor = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
-                        "GeneralContractor",
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_Stub,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_ComputeIsReadOnly,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_Validate,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_GetImplementationValue,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_SetImplementationValue,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._GeneralContractor_OnValueChanged);
-                private static void _GeneralContractor_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.JobCard.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data> c, global::LightSwitchApplication.JobCard.DetailsClass d, object sf)
-                {
-                    c(d, ref d._GeneralContractor, sf);
-                }
-                private static bool _GeneralContractor_ComputeIsReadOnly(global::LightSwitchApplication.JobCard e)
-                {
-                    bool result = false;
-                    e.GeneralContractor_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _GeneralContractor_Validate(global::LightSwitchApplication.JobCard e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.GeneralContractor_Validate(r);
-                }
-                private static string _GeneralContractor_GetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d)
-                {
-                    return d.ImplementationEntity.GeneralContractor;
-                }
-                private static void _GeneralContractor_SetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d, string v)
-                {
-                    d.ImplementationEntity.GeneralContractor = v;
-                }
-                private static void _GeneralContractor_OnValueChanged(global::LightSwitchApplication.JobCard e)
-                {
-                    e.GeneralContractor_Changed();
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry
-                    BuildingOwner = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Entry(
-                        "BuildingOwner",
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_Stub,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_ComputeIsReadOnly,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_Validate,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_GetImplementationValue,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_SetImplementationValue,
-                        global::LightSwitchApplication.JobCard.DetailsClass.PropertySetProperties._BuildingOwner_OnValueChanged);
-                private static void _BuildingOwner_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.JobCard.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data> c, global::LightSwitchApplication.JobCard.DetailsClass d, object sf)
-                {
-                    c(d, ref d._BuildingOwner, sf);
-                }
-                private static bool _BuildingOwner_ComputeIsReadOnly(global::LightSwitchApplication.JobCard e)
-                {
-                    bool result = false;
-                    e.BuildingOwner_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _BuildingOwner_Validate(global::LightSwitchApplication.JobCard e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.BuildingOwner_Validate(r);
-                }
-                private static string _BuildingOwner_GetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d)
-                {
-                    return d.ImplementationEntity.BuildingOwner;
-                }
-                private static void _BuildingOwner_SetImplementationValue(global::LightSwitchApplication.JobCard.DetailsClass d, string v)
-                {
-                    d.ImplementationEntity.BuildingOwner = v;
-                }
-                private static void _BuildingOwner_OnValueChanged(global::LightSwitchApplication.JobCard e)
-                {
-                    e.BuildingOwner_Changed();
-                }
-    
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, int>.Data _JID;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _JobNumber;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _JName;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _JDescription;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _BuildingOwner;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _JWarrenty;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _GeneralContractor;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _JDescription;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, global::System.Nullable<decimal>>.Data _JHoursEstmated;
@@ -1597,7 +1603,7 @@ namespace LightSwitchApplication
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, global::System.Nullable<global::System.DateTime>>.Data _JDate;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _JobNumber;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _JWarrenty;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _WarrantyNumber;
@@ -1622,12 +1628,6 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _Zip;
-            
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _GeneralContractor;
-            
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.JobCard, global::LightSwitchApplication.JobCard.DetailsClass, string>.Data _BuildingOwner;
             
         }
     

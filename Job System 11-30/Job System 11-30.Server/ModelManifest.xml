@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Documents>
-    <Document FullPath="C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.Server\DataSources\MRC_DataBaseData\JobCards.lsml" Checksum="75746C9343E9ECFB440059CBB51CED3799093A10F23BFD185B144F5CF100B3D9" />
-    <Document FullPath="C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.Server\Properties\DataSources\MRC_DataBaseData.lsml" Checksum="84026E92C197DA2965B690C6D88E1AB834B2F9C42651D17A1E534D34EA78C0C4" />
-    <Document FullPath="C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.Server\Properties\Service.lsml" Checksum="F3F64B6525811443670E914C52EF7F6D172C00196D9417B7A3E01660794DA0C9" />
-    <Document FullPath="C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.Server\DataSources\MRC_DataBaseData\Query1.lsml" Checksum="3FB06D9C595DD8A0D8A1684637DA940DD1C38970C87C5D498F1BC0B8CFCFBE39" />
+    <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\DataSources\MRC_DataBaseData\JobCards.lsml" Checksum="4D9B315266F3F997746B7695129B413B1B2B9BCAFBE89397801ED6F8E7EDC53C" />
+    <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\DataSources\MRC_DataBaseData\Query1.lsml" Checksum="3FB06D9C595DD8A0D8A1684637DA940DD1C38970C87C5D498F1BC0B8CFCFBE39" />
+    <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\Properties\DataSources\MRC_DataBaseData.lsml" Checksum="84026E92C197DA2965B690C6D88E1AB834B2F9C42651D17A1E534D34EA78C0C4" />
+    <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\Properties\Service.lsml" Checksum="F3F64B6525811443670E914C52EF7F6D172C00196D9417B7A3E01660794DA0C9" />
   </Documents>
 </ModelDocumentManifest>
