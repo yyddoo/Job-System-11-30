@@ -60,6 +60,12 @@
     <Reference Include="Microsoft.LightSwitch.Extensions.Server">
       <HintPath>..\_Pvt_Extensions\Microsoft.LightSwitch.Extensions\Server\Reference\Microsoft.LightSwitch.Extensions.Server.dll</HintPath>
     </Reference>
+    <Reference Include="OfficeIntegration.Common">
+      <HintPath>..\_Pvt_Extensions\OfficeIntegration\Server\Reference\OfficeIntegration.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficeIntegration.Server">
+      <HintPath>..\_Pvt_Extensions\OfficeIntegration\Server\Reference\OfficeIntegration.Server.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <ProjectCritical>True</ProjectCritical>
     </Reference>

@@ -355,6 +355,18 @@ namespace LightSwitchApplication
         partial void MyOwnMethod_CanExecute(ref bool result);
         partial void MyOwnMethod_Execute();
 
+        /// <summary>
+        /// Calls the Print screen method.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void Print()
+        {
+            this.Details.Methods.Print.CreateInvocation().Execute();
+        }
+        partial void Print_CanExecute(ref bool result);
+        partial void Print_Execute();
+
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -454,7 +466,13 @@ namespace LightSwitchApplication
             private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data _MyOwnMethodCommand;
 
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data _PrintCommand;
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data _MyOwnMethodMethod;
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data _PrintMethod;
 
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
@@ -488,6 +506,14 @@ namespace LightSwitchApplication
                     }
                 }
 
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass> Print
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>)base.GetItem(global::LightSwitchApplication.SearchJobCards.DetailsClass.CommandSetProperties.Print);
+                    }
+                }
+
             }
 
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -502,6 +528,14 @@ namespace LightSwitchApplication
                     get
                     {
                         return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>)base.GetItem(global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties.MyOwnMethod);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass> Print
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>)base.GetItem(global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties.Print);
                     }
                 }
 
@@ -569,6 +603,20 @@ namespace LightSwitchApplication
                     return ((global::LightSwitchApplication.SearchJobCards.DetailsClass)d).Methods.MyOwnMethod.CreateInvocation();
                 }
 
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Entry
+                    Print = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Entry(
+                        "Print",
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.CommandSetProperties._Print_Stub,
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.CommandSetProperties._Print_CreateExecutableObject);
+                private static void _Print_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.SearchJobCards.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommand<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data> c, global::LightSwitchApplication.SearchJobCards.DetailsClass d, object sf)
+                {
+                    c(d, ref d._PrintCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _Print_CreateExecutableObject(global::LightSwitchApplication.SearchJobCards.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.SearchJobCards.DetailsClass)d).Methods.Print.CreateInvocation();
+                }
+
             }
 
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -596,6 +644,27 @@ namespace LightSwitchApplication
                 private static void _MyOwnMethod_InvokeMethod(global::LightSwitchApplication.SearchJobCards.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
                 {
                     d.Screen.MyOwnMethod_Execute();
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Entry
+                    Print = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Entry(
+                        "Print",
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties._Print_Stub,
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties._Print_CanInvoke,
+                        global::LightSwitchApplication.SearchJobCards.DetailsClass.MethodSetProperties._Print_InvokeMethod);
+                private static void _Print_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.SearchJobCards.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethod<global::LightSwitchApplication.SearchJobCards, global::LightSwitchApplication.SearchJobCards.DetailsClass>.Data> c, global::LightSwitchApplication.SearchJobCards.DetailsClass d, object sf)
+                {
+                    c(d, ref d._PrintMethod, sf);
+                }
+                private static global::System.Exception _Print_CanInvoke(global::LightSwitchApplication.SearchJobCards.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Screen.Print_CanExecute(ref result);
+                    return result ? null : ex;
+                }
+                private static void _Print_InvokeMethod(global::LightSwitchApplication.SearchJobCards.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    d.Screen.Print_Execute();
                 }
 
             }

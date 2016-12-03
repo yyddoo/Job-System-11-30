@@ -29,6 +29,9 @@
     <AssemblyPart x:Name="Microsoft.LightSwitch.Model.Xaml.Client" Source="Microsoft.LightSwitch.Model.Xaml.Client.dll" />
     <AssemblyPart x:Name="Microsoft.LightSwitch.RuntimeEditor.Internal" Source="Microsoft.LightSwitch.RuntimeEditor.Internal.dll" />
     <AssemblyPart x:Name="Microsoft.LightSwitch.SDKProxy" Source="Microsoft.LightSwitch.SDKProxy.dll" />
+    <AssemblyPart x:Name="OfficeIntegration.Client.Design" Source="OfficeIntegration.Client.Design.dll" />
+    <AssemblyPart x:Name="OfficeIntegration.Client" Source="OfficeIntegration.Client.dll" />
+    <AssemblyPart x:Name="OfficeIntegration.Common" Source="OfficeIntegration.Common.dll" />
     <AssemblyPart x:Name="System.ComponentModel.Composition" Source="System.ComponentModel.Composition.dll" />
     <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
     <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client.Web" Source="System.ServiceModel.DomainServices.Client.Web.dll" />

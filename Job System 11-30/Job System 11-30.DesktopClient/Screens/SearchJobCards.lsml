@@ -265,6 +265,18 @@
               </ScreenExpressionTree>
             </ContentItem.DataSource>
           </ContentItem>
+          <ContentItem
+            Name="Print"
+            Kind="Command">
+            <ContentItem.DataSource>
+              <ScreenExpressionTree>
+                <ChainExpression>
+                  <CallExpression
+                    Target="SearchJobCards/Methods[Print]" />
+                </ChainExpression>
+              </ScreenExpressionTree>
+            </ContentItem.DataSource>
+          </ContentItem>
         </ContentItem.CommandItems>
       </ContentItem>
     </Screen.RootContentItem>
@@ -299,6 +311,8 @@
       </ScreenMethod>
       <ScreenMethod
         Name="MyOwnMethod" />
+      <ScreenMethod
+        Name="Print" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty

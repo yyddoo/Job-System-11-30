@@ -72,3 +72,5 @@ C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System
 C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.Server\obj\Debug\Job System 11-30.Server.csprojResolveAssemblyReference.cache
 C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.Server\obj\Debug\Application.Server.dll
 C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.Server\obj\Debug\Application.Server.pdb
+C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\bin\Debug\OfficeIntegration.Common.dll
+C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\bin\Debug\OfficeIntegration.Server.dll

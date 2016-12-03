@@ -72,3 +72,5 @@ C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\bin\Debug\
 C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\bin\Debug\DesktopClient\default.htm
 C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\bin\Debug\DesktopClient\Silverlight.js
 C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\bin\Debug\DesktopClient\web\Job_System_11_30.DesktopClient.xap
+C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\bin\Debug\bin\OfficeIntegration.Common.dll
+C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\bin\Debug\bin\OfficeIntegration.Server.dll
