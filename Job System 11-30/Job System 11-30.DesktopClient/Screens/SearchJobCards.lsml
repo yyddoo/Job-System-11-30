@@ -238,6 +238,18 @@
             </ContentItem.DataSource>
           </ContentItem>
           <ContentItem
+            Name="Print"
+            Kind="Command">
+            <ContentItem.DataSource>
+              <ScreenExpressionTree>
+                <ChainExpression>
+                  <CallExpression
+                    Target="SearchJobCards/Methods[Print]" />
+                </ChainExpression>
+              </ScreenExpressionTree>
+            </ContentItem.DataSource>
+          </ContentItem>
+          <ContentItem
             Name="Refresh"
             Kind="Command">
             <ContentItem.DataSource>
@@ -261,18 +273,6 @@
                 <ChainExpression>
                   <CallExpression
                     Target="SearchJobCards/Methods[MyOwnMethod]" />
-                </ChainExpression>
-              </ScreenExpressionTree>
-            </ContentItem.DataSource>
-          </ContentItem>
-          <ContentItem
-            Name="Print"
-            Kind="Command">
-            <ContentItem.DataSource>
-              <ScreenExpressionTree>
-                <ChainExpression>
-                  <CallExpression
-                    Target="SearchJobCards/Methods[Print]" />
                 </ChainExpression>
               </ScreenExpressionTree>
             </ContentItem.DataSource>

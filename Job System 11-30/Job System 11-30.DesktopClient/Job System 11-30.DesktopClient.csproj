@@ -145,6 +145,7 @@
       <Private>True</Private>
       <ProjectCritical>True</ProjectCritical>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="OfficeIntegration.Client">
       <HintPath>..\_Pvt_Extensions\OfficeIntegration\Client\Reference\OfficeIntegration.Client.dll</HintPath>
     </Reference>

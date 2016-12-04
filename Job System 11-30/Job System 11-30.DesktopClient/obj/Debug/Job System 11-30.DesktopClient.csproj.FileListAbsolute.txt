@@ -58,7 +58,6 @@ c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Bin\Debug\Microsoft.CSharp.xml
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Bin\Debug\System.Xml.Serialization.xml
-c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\obj\Debug\Job System 11-30.DesktopClient.csprojResolveAssemblyReference.cache
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\obj\Debug\Job_System_11_30.DesktopClient.dll
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\obj\Debug\Job_System_11_30.DesktopClient.pdb
 C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.DesktopClient\Bin\Debug\LSResourceGeneratorsTask.mcs

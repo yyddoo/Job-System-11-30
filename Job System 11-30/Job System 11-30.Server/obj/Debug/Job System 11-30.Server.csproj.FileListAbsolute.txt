@@ -32,7 +32,6 @@ c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\bin\Debug\System.ServiceModel.DomainServices.Hosting.xml
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\bin\Debug\System.ServiceModel.DomainServices.Hosting.OData.xml
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\bin\Debug\System.ServiceModel.DomainServices.Server.xml
-c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\obj\Debug\Job System 11-30.Server.csprojResolveAssemblyReference.cache
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\obj\Debug\Application.Server.dll
 c:\users\cody\documents\visual studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.Server\obj\Debug\Application.Server.pdb
 C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System 11-30.Server\bin\Debug\LSSvcGeneratorsTask.mcs

@@ -8,6 +8,10 @@ using Microsoft.LightSwitch.Framework.Client;
 using Microsoft.LightSwitch.Presentation;
 using Microsoft.LightSwitch.Presentation.Extensions;
 using OfficeIntegration;
+
+
+using Microsoft.VisualBasic;
+
 namespace LightSwitchApplication
 {
     public partial class SearchJobCards
@@ -60,43 +64,61 @@ namespace LightSwitchApplication
         }
 
         partial void Print_Execute()
+        
         {
            
+            GenerateDocument_Execute2();
+        }
+ 
             
           // Write your code here.
 
-            // Function to format a field as Currency.  
-           // dynamic formatPrice = (decimal x) => { return Strings.Format(x, "c2"); };
-
-            // Map the Word column names to the entity column names.  
-            List<ColumnMapping> mapContent = new List<ColumnMapping>();
-            mapContent.Add(new ColumnMapping("JName", "JName"));
-            mapContent.Add(new ColumnMapping("JDescription", "JDescription"));
-            mapContent.Add(new ColumnMapping("JDate", "JDate"));
-            mapContent.Add(new ColumnMapping("JHoursEstmated", "JHoursEstmated"));
-            mapContent.Add(new ColumnMapping("JHoursTook", "JHoursTook"));
-            mapContent.Add(new ColumnMapping("JWarrenty", "JWarrenty"));
-            mapContent.Add(new ColumnMapping("JSquares", "JSquares"));
-            mapContent.Add(new ColumnMapping("JPrice", "JPrice"));
-            // Format the price as Currency using the Function created above.  
-           // mapContent.Add(new ColumnMapping("JPrice", "JPrice", FormatDelegate: formatPrice));;
-            
-
-            // Define the document object.  
-            object doc = Word.GenerateDocument(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\TEMP.docx", this.JobCards.SelectedItem, mapContent);
-            // Export the document object to Word.  
-            Word.Export(doc, "JobCards", 2, false, this.JobCards, mapContent);
-
-           // Word.SaveAsPDF(doc, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Product Catalog.pdf", true);  
+        
+        void GenerateDocument_Execute2() {
+        object MyDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        string WordFile =  "C:\\JCTEMP.docx";
+        var selItem = JobCards.SelectedItem;
+        //if (File.Exists(WordFile)) {
+            // Map the content control tag names in the word document to the entity field names
+            List<OfficeIntegration.ColumnMapping> custFields = new List<OfficeIntegration.ColumnMapping>();
+            custFields.Add(new OfficeIntegration.ColumnMapping("JName", "JName"));
+            custFields.Add(new OfficeIntegration.ColumnMapping("JDescription", "JDescription"));
+            custFields.Add(new OfficeIntegration.ColumnMapping("JDate", "JDate", null, FormatDelegate: formatDelegate));
+            custFields.Add(new OfficeIntegration.ColumnMapping("JHoursEstmated", "JHoursEstmated"));
+            custFields.Add(new OfficeIntegration.ColumnMapping("JHoursTook", "JHoursTook"));
+            custFields.Add(new OfficeIntegration.ColumnMapping("JWarrenty", "JWarrenty"));
+            custFields.Add(new OfficeIntegration.ColumnMapping("JSquares", "JSquares"));
+            custFields.Add(new OfficeIntegration.ColumnMapping("JPrice", "JPrice"));
 
 
+            dynamic doc = OfficeIntegration.Word.GenerateDocument(WordFile, selItem, custFields);
+
+            //System.Windows.Forms.SendKeys.Send("{RIGHT}"); 
+
+          //  doc.Application.Visible = false;
+
+            //print here
+
+           // doc.Application.Quit();
+           //dynamic formatPrice = (decimal x) => { return Strings.Format(x, "c2"); };
 
 
+        //partial void MyOwnMethod_CanExecute(ref bool result)
+        {}
+        // Write your code here.
 
         }
 
-    }
-        
+
+        Func<DateTime, string> formatDelegate = x => x.ToString("MM/dd/yyyy");
+
+
+        
+    }
+
+
 }
+
+
     
 
