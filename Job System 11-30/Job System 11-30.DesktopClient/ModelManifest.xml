@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Documents>
-    <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Properties\Client.lsml" Checksum="09F751756BCC4CF11417D31655515173E3F16BCEBA2BD13631DFB93C1F6BD27D" />
+    <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Properties\Client.lsml" Checksum="B5753484B3E1BA743E22C85CD0051EACFA7662903ABA222C435A69273F7AC5DF" />
     <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Properties\Proxies.lsml" Checksum="105346E263FCCCFD89D74B6EAEB7B5CE5FCD5C665C02E4773E5B574DB0FFC236" />
     <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Screens\CreateNewJobCard.lsml" Checksum="310AF7D1CA1DBB8DEE9E5332242518B8DC00B9038EC15D98832F7943B21E28FE" />
-    <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Screens\SearchJobCards.lsml" Checksum="D181ABC51B037247F47C29C9F235228BE3C99C677E59CCEE8EB8AD95460896EF" />
+    <Document FullPath="C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Screens\SearchJobCards.lsml" Checksum="5DAE81730625C538727937F2C5A333E72DBE2986808E93261E64C91CF4498921" />
   </Documents>
 </ModelDocumentManifest>

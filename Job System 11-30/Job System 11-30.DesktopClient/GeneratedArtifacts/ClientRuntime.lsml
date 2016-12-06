@@ -2,6 +2,7 @@
 <Application
   Name="LightSwitchApplication.Job_System_11_30.DesktopClient"
   TargetPlatform="RichClient"
+  Logo="Microsoft.LightSwitch.UserImageResources::Resources\Logo.JPG"
   Version="1.0.0.0"
   DefaultNavigationItem="!module/NavigationItems[Tasks]"
   Shell="Microsoft.LightSwitch.Cosmopolitan:CosmopolitanShell"
@@ -249,43 +250,43 @@
             Value="Warrenty" />
           <SupportedValue
             DisplayName="No Warranty"
-            Value="NoWarr" />
+            Value="No Warranty" />
           <SupportedValue
             DisplayName="Firestone 10 Year"
-            Value="Firestone10" />
+            Value="Firestone 10 Year" />
           <SupportedValue
             DisplayName="Firestone 15 Year"
-            Value="Firestone15" />
+            Value="Firestone 15 Year" />
           <SupportedValue
             DisplayName="Firestone 20 Year"
-            Value="Firestone20" />
+            Value="Firestone 20 Year" />
           <SupportedValue
             DisplayName="Carlisle 10 Year"
-            Value="Carlisle10" />
+            Value="Carlisle 10 Year" />
           <SupportedValue
             DisplayName="Carlisle 15 Year"
-            Value="Carlisle15" />
+            Value="Carlisle 15 Year" />
           <SupportedValue
             DisplayName="Carlisle 20 Year"
-            Value="Carlisle20" />
+            Value="Carlisle 20 Year" />
           <SupportedValue
             DisplayName="MRC 2 Year"
-            Value="MRC2yr" />
+            Value="MRC 2 Year" />
           <SupportedValue
             DisplayName="Berridge Kynar Finish"
-            Value="Berridge" />
+            Value="Berridge Kynar Finish" />
           <SupportedValue
             DisplayName="JM 10 Year"
-            Value="Jm10" />
+            Value="JM 10 Year" />
           <SupportedValue
             DisplayName="JM 15 Year"
-            Value="jm15" />
+            Value="JM 15 Year" />
           <SupportedValue
             DisplayName="JM 20 Year"
-            Value="jm20" />
+            Value="JM 20 Year" />
           <SupportedValue
             DisplayName="Tremco"
-            Value="tremco" />
+            Value="Tremco" />
           <SupportedValue
             DisplayName="Garland"
             Value="Garland" />
@@ -1019,6 +1020,16 @@
                   </ChainExpression>
                 </ScreenExpressionTree>
               </ControlPropertySource>
+              <ControlPropertySource
+                Property="Microsoft.LightSwitch.RichClient:DataGrid/Properties[AutoSizeColumns]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression
+                      Value="True"
+                      ResultType=":Boolean" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
             </ContentItem.PropertySources>
           </ContentItem>
         </ContentItem>
@@ -1046,6 +1057,18 @@
                 </ChainExpression>
               </ScreenExpressionTree>
             </ContentItem.DataSource>
+            <ContentItem.PropertySources>
+              <ControlPropertySource
+                Property="Microsoft.LightSwitch.RichClient:RootControl/Properties[Image]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression
+                      Value="Microsoft.LightSwitch.UserImageResources::Resources\Print-64.png"
+                      ResultType=":String" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+            </ContentItem.PropertySources>
           </ContentItem>
           <ContentItem
             Name="Refresh"
@@ -1074,6 +1097,18 @@
                 </ChainExpression>
               </ScreenExpressionTree>
             </ContentItem.DataSource>
+            <ContentItem.PropertySources>
+              <ControlPropertySource
+                Property="Microsoft.LightSwitch.RichClient:RootControl/Properties[Image]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression
+                      Value="Microsoft.LightSwitch.UserImageResources::Resources\Delete-64.png"
+                      ResultType=":String" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+            </ContentItem.PropertySources>
           </ContentItem>
         </ContentItem.CommandItems>
       </ContentItem>

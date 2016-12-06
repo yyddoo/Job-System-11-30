@@ -145,43 +145,43 @@
             Value="Warrenty" />
           <SupportedValue
             DisplayName="No Warranty"
-            Value="NoWarr" />
+            Value="No Warranty" />
           <SupportedValue
             DisplayName="Firestone 10 Year"
-            Value="Firestone10" />
+            Value="Firestone 10 Year" />
           <SupportedValue
             DisplayName="Firestone 15 Year"
-            Value="Firestone15" />
+            Value="Firestone 15 Year" />
           <SupportedValue
             DisplayName="Firestone 20 Year"
-            Value="Firestone20" />
+            Value="Firestone 20 Year" />
           <SupportedValue
             DisplayName="Carlisle 10 Year"
-            Value="Carlisle10" />
+            Value="Carlisle 10 Year" />
           <SupportedValue
             DisplayName="Carlisle 15 Year"
-            Value="Carlisle15" />
+            Value="Carlisle 15 Year" />
           <SupportedValue
             DisplayName="Carlisle 20 Year"
-            Value="Carlisle20" />
+            Value="Carlisle 20 Year" />
           <SupportedValue
             DisplayName="MRC 2 Year"
-            Value="MRC2yr" />
+            Value="MRC 2 Year" />
           <SupportedValue
             DisplayName="Berridge Kynar Finish"
-            Value="Berridge" />
+            Value="Berridge Kynar Finish" />
           <SupportedValue
             DisplayName="JM 10 Year"
-            Value="Jm10" />
+            Value="JM 10 Year" />
           <SupportedValue
             DisplayName="JM 15 Year"
-            Value="jm15" />
+            Value="JM 15 Year" />
           <SupportedValue
             DisplayName="JM 20 Year"
-            Value="jm20" />
+            Value="JM 20 Year" />
           <SupportedValue
             DisplayName="Tremco"
-            Value="tremco" />
+            Value="Tremco" />
           <SupportedValue
             DisplayName="Garland"
             Value="Garland" />

@@ -126,3 +126,4 @@ C:\Users\Aaron Cox\Documents\GitHub\Job-System-11-30\Job System 11-30\Job System
 C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Bin\Debug\OfficeIntegration.Client.Design.dll
 C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Bin\Debug\OfficeIntegration.Client.dll
 C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\Bin\Debug\OfficeIntegration.Common.dll
+C:\Users\Cody\Documents\Visual Studio 2013\Projects\Job System 11-30\Job System 11-30\Job System 11-30.DesktopClient\obj\Debug\Job_System_11_30.DesktopClient.g.resources

@@ -30,6 +30,7 @@ namespace LightSwitchApplication
             try
             {
                 if (this.JobCards.CanDelete)
+                    this.ShowMessageBox("Delete?");
                 {
                     jc.Delete();
                     this.Save();
@@ -76,7 +77,7 @@ namespace LightSwitchApplication
         
         void GenerateDocument_Execute2() {
         object MyDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        string WordFile =  "C:\\JCTEMP.docx";
+        string WordFile =  "N:\\JCTEMP.docx";
         var selItem = JobCards.SelectedItem;
         //if (File.Exists(WordFile)) {
             // Map the content control tag names in the word document to the entity field names
